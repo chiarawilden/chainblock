@@ -1,9 +1,10 @@
 import "./page.css";
+import Card from "../components/card/Card";
 
 export default function Home() {
     return (
         <div className="page">
-            <h1>Header 1</h1>
+            <h1>Getting Started</h1>
             <h2>Subheader 1</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
             hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
@@ -15,6 +16,13 @@ export default function Home() {
             libero ducimus quasi minima eveniet. Minus reprehenderit qui veritatis velit 
             beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
             exercitationem iusto eaque sint magnam.</p>
+            
+            <div className="card-container">
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+            </div>
 
             <h1>Header 2</h1>
             <h2>Subheader 2</h2>

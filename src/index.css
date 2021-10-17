@@ -7,6 +7,7 @@
 :root {
     --main-background: rgb(8, 14, 32);
     --main-accent: rgb(1, 63, 197);
+    --main-card: rgb(62, 117, 236);
 }
 
 #root, html, body {

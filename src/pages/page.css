@@ -16,3 +16,10 @@
     padding: 22px;
     text-align: justify;
 }
+
+.card-container {
+    display: flex;
+    padding: 11px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
