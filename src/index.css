@@ -4,15 +4,39 @@
     box-sizing: border-box;
 }
 
-.app {
-    display: flex;
+:root {
+    --main-background: rgb(8, 14, 32);
 }
 
-html, body {
-    background-color: rgb(8, 14, 32);
+#root, html, body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-background);
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 
 input[type=text] {
     border: none;
     outline: none;
+}
+
+ul {
+    list-style: none;
 }

@@ -1,0 +1,25 @@
+.sidebar {
+    flex: 1;
+    color: #CCC;
+    font-family: "Urbanist", sans-serif;
+    overflow-y: auto;
+    position: sticky;
+}
+
+.sidebar h2 {
+    padding: 44px 44px 22px 44px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sidebar li {
+    padding: 4px 44px;
+}
+
+.sidebar li:hover {
+    background-color: rgb(1, 63, 197);
+}
+
+.sidebar i {
+    margin-right: 11px;
+}

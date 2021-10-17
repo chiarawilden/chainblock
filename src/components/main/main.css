@@ -1,0 +1,6 @@
+.main {
+    flex: 4;
+    border-left: 1px solid rgb(1, 63, 197);
+    padding: 44px;
+    overflow-y: auto;
+}

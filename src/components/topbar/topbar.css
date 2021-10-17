@@ -1,10 +1,11 @@
 .topbar {
       height: 77px;
+      min-height: 77px;
       width: 100%;
-      position: fixed;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      background-color: var(--main-background);
       border-bottom: 1px solid rgb(1, 63, 197);
       color: #CCC;
 }
@@ -63,7 +64,7 @@
     box-shadow: 0px 0px 16px 4px blue;
 }
 
-i {
+.search i {
     padding: 8px 11px;
     height: 100%;
     color: #CCC;
