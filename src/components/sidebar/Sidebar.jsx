@@ -6,17 +6,16 @@ export default function Sidebar() {
     return (
         <div className="sidebar">
             <aside>
-                <Link to="/getting-started"><h1>Getting Started</h1></Link>
+                <Link to="/intro-to-chainblock"><h1>Intro to ChainBlock</h1></Link>
                 <ul>
                     <li><i className="fas fa-caret-right"></i>What is ChainBlock?</li>
                     <li><i className="fas fa-caret-right"></i>How does it work?</li>
                     <li><i className="fas fa-caret-right"></i>Why choose ChainBlock?</li>
-                    <li><i className="fas fa-caret-right"></i>This is a line</li>
-                    <li><i className="fas fa-caret-right"></i>This is a line</li>
+                    <li><i className="fas fa-caret-right"></i>Basic functionality</li>
                 </ul>
                 </aside>
             <aside>
-                <h1>Introduction to ChainBlock</h1>
+                <Link to="/getting-started"><h1>Getting Started</h1></Link>
                 <ul>
                     <li><i className="fas fa-caret-right"></i>Core Concepts</li>
                     <li><i className="fas fa-caret-right"></i>API Specification</li>
@@ -26,7 +25,7 @@ export default function Sidebar() {
                 </ul>
             </aside>
             <aside>
-                <h1>Reference</h1>
+                <Link to="/reference"><h1>Reference</h1></Link>
                 <ul>
                     <li><i className="fas fa-caret-right"></i>Resources</li>
                     <li><i className="fas fa-caret-right"></i>Security considerations</li>
@@ -36,7 +35,7 @@ export default function Sidebar() {
                 </ul>
                 </aside>
             <aside>
-                <h1>Community</h1>
+                <Link to="/community"><h1>Community</h1></Link>
                 <ul>
                     <li><i className="fas fa-caret-right"></i>How to contribute</li>
                     <li><i className="fas fa-caret-right"></i>Online disscussion forums</li>

@@ -1,15 +1,15 @@
-import "./page.css";
-import Card from "../components/card/Card";
-import Sidenote from "../components/sidenote/Sidenote";
-import Snippet from "../components/snippet/Snippet";
-import PageButtons from "../components/pageButtons/PageButtons";
-import PageNav from "../components/pageNav/PageNav";
+import "../page.css";
+import Card from "../../components/card/Card";
+import Sidenote from "../../components/sidenote/Sidenote";
+import Snippet from "../../components/snippet/Snippet";
+import PageButtons from "../../components/pageButtons/PageButtons";
+import PageNav from "../../components/pageNav/PageNav";
 
-export default function Home() {
+export default function IntroToChainBlock() {
     return (
         <div className="page">
             <div className="page-left">
-                <h1>Getting Started</h1>
+                <h1>Intro to ChainBlock</h1>
                 <h2 id="home-subheader-01">Subheader 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
