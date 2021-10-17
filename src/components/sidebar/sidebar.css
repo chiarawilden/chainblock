@@ -13,18 +13,23 @@
     height: 0;
 }
 
-.sidebar h2 {
+.sidebar h1 {
     padding: 44px 44px 22px 44px;
+    color: var(--main-header);
     font-size: 16px;
     font-weight: 600;
 }
 
 .sidebar li {
     padding: 4px 44px;
+    color: var(--main-subheader);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
 }
 
 .sidebar li:hover {
     background-color: var(--main-accent);
+    color: var(--main-header);
 }
 
 .sidebar i {

@@ -7,7 +7,7 @@ import PageButtons from "../components/pageButtons/PageButtons";
 export default function Home() {
     return (
         <div className="page">
-            <h1>Getting Started</h1>
+            <h1>Welcome to ChainBlock</h1>
             <h2>Subheader 1</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
             hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
@@ -58,6 +58,7 @@ export default function Home() {
             <div className="sidenote-container">
                 <Sidenote/>
             </div>
+            <h2>Subheader 4</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
             hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
             cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 

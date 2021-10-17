@@ -5,10 +5,13 @@
     overflow-y: auto;
 }
 
-.main .left {
+.main-left {
     flex: 2;
 }
 
-.main .right {
+.main-right {
     flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }

@@ -13,12 +13,15 @@
     --main-paragraph: rgb(255, 255, 255);
     --main-sidenote: rgb(241, 60, 60);
     --main-snippet: rgb(8, 29, 70);
+    --main-header: rgb(255, 255, 255);
+    --main-subheader: #CCC;
 }
 
 #root, html, body {
     height: 100%;
     width: 100%;
     font-family: "Urbanist", sans-serif;
+    font-size: 16px;
     background-color: var(--main-background);
 }
 
@@ -44,4 +47,9 @@ input[type=text] {
 
 ul {
     list-style: none;
+}
+
+a {
+    color: var (var(--main-paragraph));
+    text-decoration: none;
 }
