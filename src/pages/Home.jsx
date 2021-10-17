@@ -1,6 +1,7 @@
 import "./page.css";
 import Card from "../components/card/Card";
 import Sidenote from "../components/sidenote/Sidenote";
+import Snippet from "../components/snippet/Snippet";
 
 export default function Home() {
     return (
@@ -53,6 +54,9 @@ export default function Home() {
             libero ducimus quasi minima eveniet. Minus reprehenderit qui veritatis velit 
             beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
             exercitationem iusto eaque sint magnam.</p>
+            <div className="snippet-container">
+                <Snippet/>
+            </div>
         </div>
     )
 }
