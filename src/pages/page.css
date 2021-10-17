@@ -1,0 +1,18 @@
+.page {
+    color: #FFF;
+    padding: 44px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page h1 {
+    padding: 33px 22px;
+}
+
+.page h2 {
+    padding: 0 22px 22px 22px;
+}
+
+.page p {
+    padding: 22px;
+    text-align: justify;
+}
