@@ -1,5 +1,6 @@
 import "./page.css";
 import Card from "../components/card/Card";
+import Sidenote from "../components/sidenote/Sidenote";
 
 export default function Home() {
     return (
@@ -36,6 +37,9 @@ export default function Home() {
             libero ducimus quasi minima eveniet. Minus reprehenderit qui veritatis velit 
             beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
             exercitationem iusto eaque sint magnam.</p>
+            <div className="sidenote-container">
+                <Sidenote/>
+            </div>
 
             <h1>Header 3</h1>
             <h2>Subheader 3</h2>

@@ -23,3 +23,9 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.sidenote-container {
+    display: flex;
+    flex-direction: column;
+    padding: 11px 33px;
+}

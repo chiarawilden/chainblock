@@ -1,11 +1,11 @@
-.card {
-    width: 44%;
+.sidenote {
+    width: 100%;
     display: flex;
     padding: 22px;
     margin: 11px 0;
     align-items: center;
     justify-content: center;
-    background-color: var(--main-card);
+    background-color: var(--main-sidenote);
     border-radius: 4px;
-    box-shadow: 0px 0px 11px 1px var(--main-highlight);
+    box-shadow: 0px 0px 11px 1px var(--main-sidenote);
 }
