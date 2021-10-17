@@ -5,11 +5,13 @@
 }
 
 :root {
-    --main-background: rgb(8, 14, 32);
     --main-accent: rgb(1, 63, 197);
+    --main-background: rgb(8, 14, 32);
     --main-card: rgb(62, 117, 236);
-    --main-sidenote: rgb(241, 60, 60);
     --main-highlight: rgb(0, 0, 255);
+    --main-page-buttons: 0, 0, 255;
+    --main-paragraph: rgb(255, 255, 255);
+    --main-sidenote: rgb(241, 60, 60);
     --main-snippet: rgb(8, 29, 70);
 }
 

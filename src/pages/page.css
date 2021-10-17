@@ -1,6 +1,7 @@
 .page {
     color: #FFF;
     padding: 44px;
+    position: relative;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
