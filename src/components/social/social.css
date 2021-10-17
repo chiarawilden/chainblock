@@ -1,6 +1,7 @@
 .social {
     margin-top: 22px;
     padding: 22px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

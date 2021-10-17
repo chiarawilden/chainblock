@@ -1,9 +1,17 @@
 .sidebar {
     flex: 1;
     height: 100%;
+    position: relative;
     color: #CCC;
     font-family: "Urbanist", sans-serif;
     overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .sidebar h2 {
@@ -23,3 +31,16 @@
 .sidebar i {
     margin-right: 11px;
 }
+
+/* *::-webkit-scrollbar:hover {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 22px;
+} */
