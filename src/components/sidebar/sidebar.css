@@ -3,7 +3,7 @@
     height: 100%;
     position: relative;
     color: #CCC;
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
