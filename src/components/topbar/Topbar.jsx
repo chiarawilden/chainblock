@@ -9,7 +9,7 @@ export default function Topbar() {
             </div>
             <div className="search">
                 <input type="text"/>
-                <i class="fas fa-search"></i>
+                <i className="fas fa-search"></i>
             </div>
         </div>
     )

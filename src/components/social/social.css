@@ -1,0 +1,18 @@
+.social {
+    margin-top: 22px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background);
+    border-top: 1px solid var(--main-accent);
+    position: sticky;
+    bottom: 0;
+}
+
+.social i {
+    color: #FFF;
+    font-size: 22px;
+}
+
