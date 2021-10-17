@@ -1,11 +1,12 @@
 import "./sidebar.css";
 import Social from "../social/Social";
+import {Link} from "react-router-dom";
 
 export default function Sidebar() {
     return (
         <div className="sidebar">
             <aside>
-                <h1>Getting Started</h1>
+                <Link to="/getting-started"><h1>Getting Started</h1></Link>
                 <ul>
                     <li><i className="fas fa-caret-right"></i>This is a line</li>
                     <li><i className="fas fa-caret-right"></i>This is a line</li>

@@ -17,7 +17,7 @@ export default function PageNav() {
             </aside>
             <aside>
                 <h1>Header 3</h1>
-                <ul>Name
+                <ul>
                     <a href="#home-subheader-03"><li><i className="fas fa-angle-double-right"></i>Subheader 3</li></a>
                     <a href="#home-subheader-04"><li><i className="fas fa-angle-double-right"></i>Subheader 4</li></a>
                 </ul>
