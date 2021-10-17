@@ -1,10 +1,11 @@
 .pagenav {
-    color: var(--main-paragraph);
     margin-top: 44px;
+    height: 100%;
+    color: var(--main-paragraph);
 }
 
 .pagenav h1 {
-    margin: 33px 0 11px 0;
+    margin: 22px 0 11px 0;
     display: block;
     color: var(--main-color);
     font-size: 18px;

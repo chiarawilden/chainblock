@@ -1,7 +1,7 @@
 import "./index.css";
 import Topbar from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar";
-import Main from "./components/main/Main";
+import Home from "./pages/Home.jsx";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Topbar/>
       <div className="wrapper">
         <Sidebar/>
-        <Main/>
+        <Home/>
       </div>
     </div>
   );

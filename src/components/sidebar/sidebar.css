@@ -32,6 +32,6 @@
     color: var(--main-header);
 }
 
-.sidebar i {
+.sidebar li i {
     margin-right: 11px;
 }

@@ -1,16 +1,41 @@
 .page {
+    flex: 4;
     color: #FFF;
-    padding: 44px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    border-left: 1px solid rgb(1, 63, 197);
+    overflow-y: auto;
 }
 
-.page h1 {
+.page-left {
+    flex: 2;
+    padding: 44px;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+
+}
+
+.page-left::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.page-right {
+    height: inherit;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.page-left h1 {
     padding: 44px 0 11px 22px;
     color: var(--main-header);
 }
 
-.page h2 {
+.page-left h2 {
     padding: 22px;
     color: var(--main-subheader);
 }
