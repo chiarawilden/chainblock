@@ -15,10 +15,6 @@
     background-color: var(--main-background);
 }
 
-body {
-    /* overflow: hidden; */
-}
-
 .app {
     height: 100vh;
     width: 100%;
