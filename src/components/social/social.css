@@ -16,3 +16,8 @@
     color: #FFF;
     font-size: 22px;
 }
+
+.social a, a:visited, a:active {
+    color: var(--main-paragraph);
+    text-decoration: none;
+}
