@@ -8,10 +8,10 @@ export default function PageNavLinks(props) {
     return (
         <>
             {header && (
-                <Link to={header.url}><h1>{header}</h1></Link>
+                <h1><Link to={header.url}>{header}</Link></h1>
             )}
             {subheader && (
-                <Link to={subheader.url}><span><i class="fas fa-angle-double-right"></i>{subheader}</span></Link>
+                <span><Link to={subheader.url}><i class="fas fa-angle-double-right"></i>{subheader}</Link></span>
             )}
         </>
     )

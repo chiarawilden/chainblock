@@ -8,10 +8,10 @@ export default function SidebarLinks(props) {
     return (
         <>
             {header && (
-                <Link to={header.url}><h1>{header}</h1></Link>
+                <h1><Link to={header.url}>{header}</Link></h1>
             )}
             {subheader && (
-                <Link to={subheader.url}><span><i className="fas fa-caret-right"></i>{subheader}</span></Link>
+                <span><Link to={subheader.url}><i className="fas fa-caret-right"></i>{subheader}</Link></span>
             )}
         </>
     )

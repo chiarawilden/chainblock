@@ -7,13 +7,6 @@
 
 .sidebar span {
     padding: 4px 55px;
-    color: var(--main-subheader);
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-}
-
-.sidebar span {
-    padding: 4px 55px;
     display: block;
     color: var(--main-subheader);
     cursor: pointer;
