@@ -1,35 +1,5 @@
 .pagenav {
-    padding-top: 44px;
+    padding-top: 22px;
     height: 100%;
     color: var(--main-paragraph);
-}
-
-.pagenav h1 {
-    margin: 22px 0 11px 0;
-    display: block;
-    color: var(--main-color);
-    font-size: 16px;
-}
-
-.pagenav li {
-    padding-left: 11px;
-    display: block;
-    color: var(--main-subheader);
-    font-size: 16px;
-    transition: all 0.2s ease-in-out;
-}
-
-.pagenav li:hover {
-    color: var(--main-header);
-    cursor: pointer;
-    text-shadow: 0px 0px 1px #FFF;
-}
-
-.pagenav i {
-    margin-right: 11px;
-}
-
-.pagenav a, a:visited, a:active {
-    color: var(--main-paragraph);
-    text-decoration: none;
 }

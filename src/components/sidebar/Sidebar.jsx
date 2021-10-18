@@ -1,9 +1,9 @@
 import "./sidebar.css";
 import Social from "../social/Social";
-import SidebarSection from "../sidebarSection/SidebarSection";
+import SidebarLinks from "../sidebarLinks/SidebarLinks";
 
 export default function Sidebar() {
-    const sidebarSection = [
+    const sidebarLinks = [
         {id: 0, header: "Intro to ChainBlock", url: "/intro-to-chainblock"},
         {id: 1, subheader: "What is ChainBlock?", url:"/"},
         {id: 2, subheader: "How does it work?", url:"/"},
@@ -34,8 +34,8 @@ export default function Sidebar() {
 
     return (
         <div className="sidebar">       
-            {sidebarSection.map((element, id) => (
-                <SidebarSection link={element} key={element.id}/>
+            {sidebarLinks.map((element, id) => (
+                <SidebarLinks link={element} key={element.id}/>
             ))}
             <Social/>
         </div>

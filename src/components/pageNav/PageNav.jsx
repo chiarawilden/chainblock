@@ -1,27 +1,24 @@
 import "./pagenav.css";
+import PageNavLinks from "../pageNavLinks/PageNavLinks";
 
 export default function PageNav() {
+    const pageNavLinks = [
+        {id: 0, header: "Welcome to ChainBlock", url: "/"},
+        {id: 2, subheader: "Subheader 1", url:"/"},
+
+        {id: 3, header: "Header 2", url: "/intro-to-chainblock"},
+        {id: 4, subheader: "Subheader 2", url:"/"},
+
+        {id: 5, header: "Header 3", url: "/intro-to-chainblock"},
+        {id: 6, subheader: "Subheader 3", url:"/"},
+        {id: 7, subheader: "Subheader 4", url:"/"}
+    ]
+
     return (
         <div className="pagenav">
-            <aside>
-                <h1 className="heading">Welcome to ChainBlock</h1>
-                <ul>
-                    <a href="#home-subheader-01"><li><i className="fas fa-angle-double-right"></i>Subheader 1</li></a>
-                </ul>  
-            </aside>
-            <aside>
-                <h1>Header 2</h1>
-                <ul>
-                    <a href="#home-subheader-02"><li><i className="fas fa-angle-double-right"></i>Subheader 2</li></a>
-                </ul>
-            </aside>
-            <aside>
-                <h1>Header 3</h1>
-                <ul>
-                    <a href="#home-subheader-03"><li><i className="fas fa-angle-double-right"></i>Subheader 3</li></a>
-                    <a href="#home-subheader-04"><li><i className="fas fa-angle-double-right"></i>Subheader 4</li></a>
-                </ul>
-            </aside>      
+            {pageNavLinks.map((element, id) => (
+                <PageNavLinks pageLink={element} key={element.id}/>
+            ))}
         </div>
     )
 }
