@@ -9,8 +9,10 @@ export default function Topbar() {
                 <div className="title">Docs</div>
             </div>
             <div className="search">
-                <input type="text"/>
-                <i className="fas fa-search"></i>
+                <form>
+                    <input type="text" placeholder="Search"/>
+                    <button><i className="fas fa-search"></i></button>
+                </form>
             </div>
         </div>
     )

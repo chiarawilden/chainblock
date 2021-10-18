@@ -42,10 +42,15 @@
     margin: 0 22px;
     height: 44%;
     flex: 1;
-    display: flex;
-    align-items: center;
     border-radius: 22px;
     opacity: 0.8;
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 22px;
     transition: all 1.4s ease-in-out;
 }
 
@@ -58,9 +63,20 @@
     color: #111111;
 }
 
-.search:hover {
+.search input::placeholder {
+    color: #CCC;
+}
+
+.search form:hover {
     opacity: 1;
     box-shadow: 0px 0px 16px 4px var(--main-highlight);
+}
+
+.search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 22px 22px 0;
 }
 
 .search i {
