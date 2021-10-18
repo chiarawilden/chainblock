@@ -32,21 +32,6 @@
     overflow: hidden;
 }
 
-/* body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-} */
-/* .app {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-} */
-
 .main {
     height: calc(100% - 77px);
     width: 100%;
@@ -61,9 +46,4 @@ input[type=text] {
 
 ul {
     list-style: none;
-}
-
-a {
-    color: var (var(--main-paragraph));
-    text-decoration: none;
 }
