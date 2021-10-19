@@ -6,6 +6,11 @@ import PageButtons from "../components/pageButtons/PageButtons";
 import PageNav from "../components/pageNav/PageNav";
 
 export default function Home() {
+    const cards = [
+        {id: 0, text: "Maybe consider architecting your code like this. Sometimes if you don't do it this way, things can go wrong."},  
+        {id: 1, text: "We just added this new feature to make your life easier! If you need more information, you can find it here."}
+    ]
+
     return (
         <div className="page">
             <div className="page-left">
@@ -20,13 +25,11 @@ export default function Home() {
                 uod minus doloribus autem dolorum minima. Delectus, iusto eius assumenda 
                 libero ducimus quasi minima eveniet. Minus reprehenderit qui veritatis velit 
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
-                exercitationem iusto eaque sint magnam.</p>
-                
+                exercitationem iusto eaque sint magnam.</p>  
                 <div className="card-container">
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    {cards.map((element, id) => (
+                    <Card card={element} key={element.id}/>
+                    ))}
                 </div>
 
                 <h1>Header 2</h1>

@@ -1,9 +1,11 @@
 import "./card.css";
 
-export default function Card() {
+export default function Card(props) {
+    const text = props.card.text;
+    
     return (
         <div className="card">
-            Here's a hot tip 💡
+           {text}
         </div>
     )
 }

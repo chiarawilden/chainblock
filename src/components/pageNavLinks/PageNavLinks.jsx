@@ -11,7 +11,7 @@ export default function PageNavLinks(props) {
                 <h1><Link to={header.url}>{header}</Link></h1>
             )}
             {subheader && (
-                <span><Link to={subheader.url}><i class="fas fa-angle-double-right"></i>{subheader}</Link></span>
+                <span><Link to={subheader.url}><i className="fas fa-angle-double-right"></i>{subheader}</Link></span>
             )}
         </>
     )

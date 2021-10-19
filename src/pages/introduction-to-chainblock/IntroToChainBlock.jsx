@@ -23,9 +23,6 @@ export default function IntroToChainBlock() {
                 exercitationem iusto eaque sint magnam.</p> 
                 <div className="card-container">
                     <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
                 </div>
 
                 <h1>Header 2</h1>
