@@ -9,7 +9,7 @@
 }
 
 .page-left {
-    flex: 2;
+    flex: 1.75;
     height: 100%;
     padding: 44px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -24,7 +24,7 @@
 }
 
 .page-right {
-    flex: 1;
+    flex: 1.25;
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -32,23 +32,23 @@
 }
 
 .page-left h1 {
-    padding: 44px 0 11px 22px;
+    padding: 44px 0 11px 44px;
     color: var(--main-header);
 }
 
 .page-left h2 {
-    padding: 22px;
+    padding: 22px 44px;;
     color: var(--main-subheader);
 }
 
 .page p {
-    padding: 22px;
+    padding: 22px 44px;
     text-align: justify;
 }
 
 .card-container {
     display: flex;
-    padding: 11px;
+    padding: 11px 22px;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -56,7 +56,7 @@
 .sidenote-container {
     display: flex;
     flex-direction: column;
-    padding: 11px 33px;
+    padding: 11px 44px;
 }
 
 .snippet-container {
@@ -64,5 +64,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 11px 22px;
+    padding: 11px 33px;
 }
