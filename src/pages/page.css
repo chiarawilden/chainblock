@@ -38,7 +38,12 @@
 
 .page-left h2 {
     padding: 22px 44px;;
+    color: var(--main-card);
+}
+
+.page-left h3 {
     color: var(--main-subheader);
+    padding: 22px 44px;;
 }
 
 .page p {
@@ -97,7 +102,7 @@
     color: var(--main-accent);
     font-size: 16px;
     font-weight: 600;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.33s ease-in-out;
 }
 
 

@@ -1,5 +1,4 @@
 import "./page.css";
-import Sidenote from "../components/sidenote/Sidenote";
 import {Link} from "react-router-dom";
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
         <div className="page">
             <div className="page-left">
                 <h1>Welcome to ChainBlock</h1>
-                <h2>Overview</h2>
+                <h2>History of Blockchain</h2>
                 <p>Cryptographer David Chaum first proposed a blockchain-like protocol in his 1982 dissertation 
                 "Computer Systems Established, Maintained, and Trusted by Mutually Suspicious Groups." Further 
                 work on a cryptographically secured chain of blocks was described in 1991 by Stuart Haber and W. 
@@ -24,11 +23,6 @@ export default function Home() {
                 rate with which blocks are added to the chain. The design was implemented the following year by Nakamoto 
                 as a core component of the cryptocurrency bitcoin, where it serves as the public ledger for all transactions 
                 on the network.</p>  
-                <div className="sidenote-container">
-                    {sidenotes.map((element, id) => (
-                    <Sidenote sidenote={element} key={id}/>
-                    ))}
-                </div>
                 <div className="next-button"><Link to="/intro-to-chainblock"><button>Next</button></Link></div>
             </div>
             <div className="page-right"></div>

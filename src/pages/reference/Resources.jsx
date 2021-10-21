@@ -28,7 +28,7 @@ export default function Resources() {
     ]
 
     const pagebuttons = {
-        previousPage: "/resources",
+        previousPage: "/reference",
         nextPage: "/security-considerations"
     }
 

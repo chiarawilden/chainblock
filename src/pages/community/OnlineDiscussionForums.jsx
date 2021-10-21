@@ -28,7 +28,7 @@ export default function OnlineDiscussionForums() {
     ]
 
     const pagebuttons = {
-        previousPage: "/online-discussion-forums",
+        previousPage: "/how-to-contribute",
         nextPage: "/chainblock-workshops"
     }
 

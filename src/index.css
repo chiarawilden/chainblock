@@ -15,7 +15,7 @@
     --main-sidenote: rgb(241, 60, 60);
     --main-snippet: rgb(8, 29, 70);
     --main-header: rgb(255, 255, 255);
-    --main-subheader: #CCC;
+    --main-subheader: rgb(167, 180, 194);
 }
 
 #root, html, body {
