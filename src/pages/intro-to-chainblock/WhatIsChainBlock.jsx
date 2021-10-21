@@ -9,11 +9,12 @@ export default function WhatIsChainBlock() {
     const cards = [
         {id: 0, text: "Blockchains are typically managed by a peer-to-peer network for use as a publicly distributed ledger, where nodes collectively adhere to a protocol to communicate and validate new blocks💡"}
     ]
+    
     return (
         <div className="page">
             <div className="page-left">
                 <h1>What is ChainBlock</h1>
-                <h2 id="subheader-01">Overview</h2>
+                <h2>Overview</h2>
                 <p>A blockchain is a growing list of records, called blocks, that are linked together using cryptography.
                 Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data (generally 
                 represented as a Merkle tree).</p>
@@ -30,7 +31,7 @@ export default function WhatIsChainBlock() {
                 </div>
 
                 <h1>History</h1>
-                <h2 id="subheader-02">The Origin Story</h2>
+                <h2>The Origin Story</h2>
                 <p>Cryptographer David Chaum first proposed a blockchain-like protocol in his 1982 dissertation "Computer Systems 
                 Established, Maintained, and Trusted by Mutually Suspicious Groups."</p>
 
@@ -46,7 +47,7 @@ export default function WhatIsChainBlock() {
                 </div>
 
                 <h1>Header 3</h1>
-                <h2 id="subheader-03">Subheader 3</h2>
+                <h2>Subheader 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -60,7 +61,7 @@ export default function WhatIsChainBlock() {
                 <div className="sidenote-container">
                     <Sidenote/>
                 </div>
-                <h2 id="subheader-04">Subheader 4</h2>
+                <h2>Subheader 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 

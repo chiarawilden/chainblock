@@ -10,11 +10,12 @@ export default function IntroToChainBlock() {
         {id: 0, text: "Maybe consider architecting your code like this. Sometimes if you don't do it this way, things can go wrong."},  
         {id: 1, text: "We just added this new feature to make your life easier! If you need more information, you can find it here."}
     ]
+
     return (
         <div className="page">
             <div className="page-left">
                 <h1>Intro to ChainBlock</h1>
-                <h2 id="home-subheader-01">Subheader 1</h2>
+                <h2>Subheader 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -32,7 +33,7 @@ export default function IntroToChainBlock() {
                 </div>
 
                 <h1>Header 2</h1>
-                <h2 id="home-subheader-02">Subheader 2</h2>
+                <h2>Subheader 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -48,7 +49,7 @@ export default function IntroToChainBlock() {
                 </div>
 
                 <h1>Header 3</h1>
-                <h2 id="home-subheader-03">Subheader 3</h2>
+                <h2>Subheader 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -62,7 +63,7 @@ export default function IntroToChainBlock() {
                 <div className="sidenote-container">
                     <Sidenote/>
                 </div>
-                <h2 id="home-subheader-04">Subheader 4</h2>
+                <h2>Subheader 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 

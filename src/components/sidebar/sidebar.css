@@ -12,3 +12,8 @@
     width: 0;
     height: 0;
 }
+
+.sidebar span a {
+    color: var(--main-paragraph);
+    text-decoration: none;
+}
