@@ -2,16 +2,18 @@ import "./pagenavlinks.css";
 import {Link} from "react-router-dom";
 
 export default function PageNavLinks(props) {
-    const header = props.pageLink.header;
-    const subheader = props.pageLink.subheader;
+    const {pageLink} = props;
+    const header = pageLink.header;
+    const subheader = pageLink.subheader;
+    const url = pageLink.url;
 
     return (
         <>
             {header && (
-                <h1><Link to={header.url}>{header}</Link></h1>
+                <h1><Link to={url}>{header}</Link></h1>
             )}
             {subheader && (
-                <span><Link to={subheader.url}><i className="fas fa-angle-double-right"></i>{subheader}</Link></span>
+                <span><Link to={url}><i className="fas fa-angle-double-right"></i>{subheader}</Link></span>
             )}
         </>
     )

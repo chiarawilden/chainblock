@@ -17,7 +17,7 @@ export default function PageNav() {
     return (
         <div className="pagenav">
             {pageNavLinks.map((element, id) => (
-                <PageNavLinks pageLink={element} key={element.id}/>
+                <PageNavLinks pageLink={element} key={id}/>
             ))}
         </div>
     )
