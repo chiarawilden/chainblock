@@ -1,9 +1,8 @@
 import "./pagenavlinks.css";
-import {Link} from "react-router-dom";
 import {NavHashLink} from 'react-router-hash-link';
 
 export default function PageNavLinks(props) {
-    // uses singular "pageLink" designation for component outputting props
+    // uses singular "pageLink" designation for current component outputting props
     const {pageLink} = props;
     const headerLink = pageLink.headerLink;
     const subheaderLink = pageLink.subheaderLink;

@@ -34,8 +34,8 @@ export default function Sidebar() {
 
     return (
         <div className="sidebar">       
-            {sidebarLinks.map((element, id) => (
-                <SidebarLinks link={element} key={id}/>
+            {sidebarLinks.map((element) => (
+                <SidebarLinks link={element} key={element.id}/>
             ))}
             <Social/>
         </div>

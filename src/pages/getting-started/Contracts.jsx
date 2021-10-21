@@ -19,11 +19,19 @@ export default function Contracts() {
         {id: 0, code: "Some code"}
     ]
 
+    const pagelinks = [
+        {id: 0, headerLink: "Contracts", url: "#header-1"},
+        {id: 1, subheaderLink: "Subheader 1", url: "#subheader-1"},
+        {id: 2, subheaderLink: "Subheader 2", url: "#subheader-2"},
+        {id: 3, subheaderLink: "Subheader 3", url: "#subheader-3"},
+        {id: 4, subheaderLink: "Subheader 4", url: "#subheader-4"}
+    ]
+
     return (
         <div className="page">
             <div className="page-left">
-                <h1>Contracts</h1>
-                <h2>Subheader 1</h2>
+                <h1 id="header-1">Contracts</h1>
+                <h2 id="subheader-1">Subheader 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -35,12 +43,12 @@ export default function Contracts() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p> 
                 <div className="card-container">
-                    {cards.map((element, id) => (
-                    <Card card={element} key={id}/>
+                    {cards.map((element) => (
+                    <Card card={element} key={element.id}/>
                     ))}
                 </div>
 
-                <h2>Subheader 2</h2>
+                <h2 id="subheader-2">Subheader 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -52,12 +60,12 @@ export default function Contracts() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="snippet-container">
-                    {snippets.map((element, id) => (
-                    <Snippet snippet={element} key={id}/>
+                    {snippets.map((element) => (
+                    <Snippet snippet={element} key={element.id}/>
                     ))}
                 </div>
 
-                <h2>Subheader 3</h2>
+                <h2 id="subheader-3">Subheader 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -69,12 +77,12 @@ export default function Contracts() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="sidenote-container">
-                    {sidenotes.map((element, id) => (
-                    <Sidenote sidenote={element} key={id}/>
+                    {sidenotes.map((element) => (
+                    <Sidenote sidenote={element} key={element.id}/>
                     ))}
                 </div>
                 
-                <h2>Subheader 4</h2>
+                <h2 id="subheader-4">Subheader 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -85,7 +93,8 @@ export default function Contracts() {
                 <PageButtons/>
             </div>
             <div className="page-right">
-                <PageNav/>
+                {/* passes whole prop object to pageNav component, followed by pageNavLinks component */}
+                <PageNav pageLinks={pagelinks}/>
             </div>
         </div>
     )

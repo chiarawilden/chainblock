@@ -44,8 +44,8 @@ export default function IntroToChainBlock() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p> 
                 <div className="card-container">
-                    {cards.map((element, id) => (
-                        <Card card={element} key={id}/>
+                    {cards.map((element) => (
+                        <Card card={element} key={element.id}/>
                     ))}
                 </div>
 
@@ -61,8 +61,8 @@ export default function IntroToChainBlock() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="snippet-container">
-                    {snippets.map((element, id) => (
-                        <Snippet snippet={element} key={id}/>
+                    {snippets.map((element) => (
+                        <Snippet snippet={element} key={element.id}/>
                     ))}
                 </div>
 
@@ -78,8 +78,8 @@ export default function IntroToChainBlock() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="sidenote-container">
-                    {sidenotes.map((element, id) => (
-                        <Sidenote sidenote={element} key={id}/>
+                    {sidenotes.map((element) => (
+                        <Sidenote sidenote={element} key={element.id}/>
                     ))}
                 </div>
 

@@ -17,12 +17,20 @@ export default function WhatIsChainBlock() {
     const snippets = [
         {id: 0, code: "Some code"}
     ]
+
+    const pagelinks = [
+        {id: 0, headerLink: "What is ChainBlock?", url: "#header-1"},
+        {id: 1, subheaderLink: "Subheader 1", url: "#subheader-1"},
+        {id: 2, subheaderLink: "Subheader 2", url: "#subheader-2"},
+        {id: 3, subheaderLink: "Subheader 3", url: "#subheader-3"},
+        {id: 4, subheaderLink: "Subheader 4", url: "#subheader-4"}
+    ]
     
     return (
         <div className="page">
             <div className="page-left">
-                <h1>What is ChainBlock</h1>
-                <h2>Overview</h2>
+                <h1 id="header-1">What is ChainBlock?</h1>
+                <h2 id="subheader-1">Overview</h2>
                 <p>A blockchain is a growing list of records, called blocks, that are linked together using cryptography.
                 Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data (generally 
                 represented as a Merkle tree).</p>
@@ -33,12 +41,12 @@ export default function WhatIsChainBlock() {
                 data because once recorded, the data in any given block cannot be altered retroactively without altering all 
                 subsequent blocks.</p>
                 <div className="card-container">
-                    {cards.map((element, id) => (
-                    <Card card={element} key={element.id}/>
+                    {cards.map((element) => (
+                        <Card card={element} key={element.id}/>
                     ))}
                 </div>
 
-                <h2>The Origin Story</h2>
+                <h2 id="subheader-2">The Origin Story</h2>
                 <p>Cryptographer David Chaum first proposed a blockchain-like protocol in his 1982 dissertation "Computer Systems 
                 Established, Maintained, and Trusted by Mutually Suspicious Groups."</p>
 
@@ -50,12 +58,12 @@ export default function WhatIsChainBlock() {
                 <p>Under their company Surety, their document certificate hashes have been published in The New York Times every week 
                 since 1995.</p>
                 <div className="snippet-container">
-                    {snippets.map((element, id) => (
-                    <Snippet snippet={element} key={id}/>
+                    {snippets.map((element) => (
+                        <Snippet snippet={element} key={element.id}/>
                     ))}
                 </div>
 
-                <h2>Subheader 3</h2>
+                <h2 id="subheader-3">Subheader 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -67,12 +75,12 @@ export default function WhatIsChainBlock() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="sidenote-container">
-                    {sidenotes.map((element, id) => (
-                    <Sidenote sidenote={element} key={id}/>
+                    {sidenotes.map((element) => (
+                        <Sidenote sidenote={element} key={element.id}/>
                     ))}
                 </div>
 
-                <h2>Subheader 4</h2>
+                <h2 id="subheader-4">Subheader 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -83,7 +91,8 @@ export default function WhatIsChainBlock() {
                 <PageButtons/>
             </div>
             <div className="page-right">
-                <PageNav/>
+                {/* passes whole prop object to pageNav component, followed by pageNavLinks component */}
+                <PageNav pageLinks={pagelinks}/>
             </div>
         </div>
     )

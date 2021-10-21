@@ -1,7 +1,5 @@
 import "./page.css";
-import Card from "../components/card/Card";
 import Sidenote from "../components/sidenote/Sidenote";
-import Snippet from "../components/snippet/Snippet";
 import PageButtons from "../components/pageButtons/PageButtons";
 
 export default function Home() {
