@@ -5,6 +5,7 @@ import Snippet from "../../components/snippet/Snippet";
 import PageButtons from "../../components/pageButtons/PageButtons";
 import PageNav from "../../components/pageNav/PageNav";
 
+
 export default function IntroToChainBlock() {
     const cards = [
         {id: 0, text: "Maybe consider architecting your code like this. Sometimes if you don't do it this way, things can go wrong."},  
@@ -19,11 +20,19 @@ export default function IntroToChainBlock() {
         {id: 0, code: "Some code"}
     ]
 
+    const pagelinks = [
+        {id: 0, headerLink: "Intro to ChainBlock", url: "#header-1"},
+        {id: 1, subheaderLink: "Subheader 1", url: "#subheader-1"},
+        {id: 2, subheaderLink: "Subheader 2", url: "#subheader-2"},
+        {id: 3, subheaderLink: "Subheader 3", url: "#subheader-3"},
+        {id: 4, subheaderLink: "Subheader 4", url: "#subheader-4"}
+    ]
+
     return (
         <div className="page">
             <div className="page-left">
-                <h1>Intro to ChainBlock</h1>
-                <h2>Subheader 1</h2>
+                <h1 id="header-1">Intro to ChainBlock</h1>
+                <h2 id="subheader-1">Subheader 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -36,11 +45,11 @@ export default function IntroToChainBlock() {
                 exercitationem iusto eaque sint magnam.</p> 
                 <div className="card-container">
                     {cards.map((element, id) => (
-                    <Card card={element} key={id}/>
+                        <Card card={element} key={id}/>
                     ))}
                 </div>
 
-                <h2>Subheader 2</h2>
+                <h2 id="subheader-2">Subheader 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -53,11 +62,11 @@ export default function IntroToChainBlock() {
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="snippet-container">
                     {snippets.map((element, id) => (
-                    <Snippet snippet={element} key={id}/>
+                        <Snippet snippet={element} key={id}/>
                     ))}
                 </div>
 
-                <h2>Subheader 3</h2>
+                <h2 id="subheader-3">Subheader 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -70,11 +79,11 @@ export default function IntroToChainBlock() {
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="sidenote-container">
                     {sidenotes.map((element, id) => (
-                    <Sidenote sidenote={element} key={id}/>
+                        <Sidenote sidenote={element} key={id}/>
                     ))}
                 </div>
 
-                <h2>Subheader 4</h2>
+                <h2 id="subheader-4">Subheader 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -85,7 +94,8 @@ export default function IntroToChainBlock() {
                 <PageButtons/>
             </div>
             <div className="page-right">
-                <PageNav/>
+                {/* passes whole prop object to pageNav component, followed by pageNavLinks component */}
+                <PageNav pageLinks={pagelinks}/>
             </div>
         </div>
     )
