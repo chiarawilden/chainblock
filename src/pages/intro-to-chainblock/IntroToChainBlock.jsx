@@ -11,6 +11,14 @@ export default function IntroToChainBlock() {
         {id: 1, text: "We just added this new feature to make your life easier! If you need more information, you can find it here."}
     ]
 
+    const sidenotes = [
+        {id: 0, text: "This is something we're working on adjusting in future releases."}
+    ]
+
+    const snippets = [
+        {id: 0, code: "Some code"}
+    ]
+
     return (
         <div className="page">
             <div className="page-left">
@@ -32,7 +40,6 @@ export default function IntroToChainBlock() {
                     ))}
                 </div>
 
-                <h1>Header 2</h1>
                 <h2>Subheader 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
@@ -45,10 +52,11 @@ export default function IntroToChainBlock() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="snippet-container">
-                    <Snippet/>
+                    {snippets.map((element, id) => (
+                    <Snippet snippet={element} key={id}/>
+                    ))}
                 </div>
 
-                <h1>Header 3</h1>
                 <h2>Subheader 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
@@ -61,8 +69,11 @@ export default function IntroToChainBlock() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="sidenote-container">
-                    <Sidenote/>
+                    {sidenotes.map((element, id) => (
+                    <Sidenote sidenote={element} key={id}/>
+                    ))}
                 </div>
+
                 <h2>Subheader 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 

@@ -22,7 +22,7 @@ export default function Home() {
         <div className="page">
             <div className="page-left">
                 <h1>Welcome to ChainBlock</h1>
-                <h2 id="home-subheader-01">Subheader 1</h2>
+                <h2>Subheader 1</h2>
                 <p>A blockchain is a growing list of records, called blocks, that are linked together using cryptography.
                 Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data (generally 
                 represented as a Merkle tree).</p>
@@ -38,7 +38,7 @@ export default function Home() {
                     ))}
                 </div>
 
-                <h2 id="home-subheader-02">Subheader 2</h2>
+                <h2>Subheader 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -55,7 +55,7 @@ export default function Home() {
                     ))}
                 </div>
 
-                <h2 id="home-subheader-03">Subheader 3</h2>
+                <h2>Subheader 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
@@ -71,7 +71,8 @@ export default function Home() {
                     <Sidenote sidenote={element} key={id}/>
                     ))}
                 </div>
-                <h2 id="home-subheader-04">Subheader 4</h2>
+
+                <h2>Subheader 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
                 cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 

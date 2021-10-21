@@ -9,6 +9,14 @@ export default function WhatIsChainBlock() {
     const cards = [
         {id: 0, text: "Blockchains are typically managed by a peer-to-peer network for use as a publicly distributed ledger, where nodes collectively adhere to a protocol to communicate and validate new blocks💡"}
     ]
+
+    const sidenotes = [
+        {id: 0, text: "This is something we're working on adjusting in future releases."}
+    ]
+
+    const snippets = [
+        {id: 0, code: "Some code"}
+    ]
     
     return (
         <div className="page">
@@ -30,7 +38,6 @@ export default function WhatIsChainBlock() {
                     ))}
                 </div>
 
-                <h1>History</h1>
                 <h2>The Origin Story</h2>
                 <p>Cryptographer David Chaum first proposed a blockchain-like protocol in his 1982 dissertation "Computer Systems 
                 Established, Maintained, and Trusted by Mutually Suspicious Groups."</p>
@@ -43,10 +50,11 @@ export default function WhatIsChainBlock() {
                 <p>Under their company Surety, their document certificate hashes have been published in The New York Times every week 
                 since 1995.</p>
                 <div className="snippet-container">
-                    <Snippet/>
+                    {snippets.map((element, id) => (
+                    <Snippet snippet={element} key={id}/>
+                    ))}
                 </div>
 
-                <h1>Header 3</h1>
                 <h2>Subheader 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
@@ -59,8 +67,11 @@ export default function WhatIsChainBlock() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="sidenote-container">
-                    <Sidenote/>
+                    {sidenotes.map((element, id) => (
+                    <Sidenote sidenote={element} key={id}/>
+                    ))}
                 </div>
+
                 <h2>Subheader 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
                 hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
