@@ -27,6 +27,11 @@ export default function StyleGuide() {
         {id: 4, subheaderLink: "Subheader 4", url: "#subheader-4"}
     ]
 
+    const pagebuttons = {
+        previousPage: "/security-considerations",
+        nextPage: "/known-bugs"
+    }
+
     return (
         <div className="page">
             <div className="page-left">
@@ -90,7 +95,7 @@ export default function StyleGuide() {
                 totam, sunt ipsum nesciunt modi inventore dignissimos quisquam ut laboriosam 
                 nam consectetur asperiores recusandae in obcaecati molestias sequi earum animi q
                 uod minus doloribus autem dolorum minima.</p>
-                <PageButtons/>
+                <PageButtons pageButtons={pagebuttons}/>
             </div>
             <div className="page-right">
                 {/* passes whole prop object to pageNav component, followed by pageNavLinks component */}

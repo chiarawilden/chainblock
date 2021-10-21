@@ -66,3 +66,42 @@
     justify-content: center;
     padding: 11px 33px;
 }
+
+.previous-button {
+    height: 77px;
+    width: 100%;
+    margin: 44px;
+    padding: 22px 22px 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    bottom: 0;
+}
+
+.next-button {
+    height: 77px;
+    width: 100%;
+    margin-top: 44px;
+    padding: 22px 44px 22px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 0;
+}
+
+.previous-button button, .next-button button {
+    padding: 11px 44px;
+    background-color: transparent;
+    border-radius: 22px;
+    border: 1px solid var(--main-accent);
+    color: var(--main-accent);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.previous-button button:hover, .next-button button:hover {
+    background-color: rgba(var(--main-page-buttons), 0.2);
+    box-shadow: 0px 0px 4px 1px var(--main-highlight);
+}

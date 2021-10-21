@@ -25,6 +25,11 @@ export default function WhatIsChainBlock() {
         {id: 3, subheaderLink: "Subheader 3", url: "#subheader-3"},
         {id: 4, subheaderLink: "Subheader 4", url: "#subheader-4"}
     ]
+
+    const pagebuttons = {
+        previousPage: "/what-is-chainblock",
+        nextPage: "/how-does-it-work"
+    }
     
     return (
         <div className="page">
@@ -88,7 +93,7 @@ export default function WhatIsChainBlock() {
                 totam, sunt ipsum nesciunt modi inventore dignissimos quisquam ut laboriosam 
                 nam consectetur asperiores recusandae in obcaecati molestias sequi earum animi q
                 uod minus doloribus autem dolorum minima.</p>
-                <PageButtons/>
+                <PageButtons pageButtons={pagebuttons}/>
             </div>
             <div className="page-right">
                 {/* passes whole prop object to pageNav component, followed by pageNavLinks component */}

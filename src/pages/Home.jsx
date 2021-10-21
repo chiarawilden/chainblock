@@ -1,6 +1,6 @@
 import "./page.css";
 import Sidenote from "../components/sidenote/Sidenote";
-import PageButtons from "../components/pageButtons/PageButtons";
+import {Link} from "react-router-dom";
 
 export default function Home() {
     const sidenotes = [
@@ -29,7 +29,7 @@ export default function Home() {
                     <Sidenote sidenote={element} key={id}/>
                     ))}
                 </div>
-                <PageButtons/>
+                <div className="next-button"><Link to="/intro-to-chainblock"><button>Next</button></Link></div>
             </div>
             <div className="page-right"></div>
         </div>

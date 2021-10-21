@@ -8,17 +8,30 @@ import PageNav from "../components/pageNav/PageNav";
 
 export default function Layout() {
     const cards = [
-        {id: 0, text: "This is some sample text. "},  
-        {id: 1, text: "Here's some more sample text. Enjoy!"}
+        {id: 0, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident hic repellat qui, quas delectus."},  
+        {id: 1, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident hic repellat qui, quas delectus."}
     ]
 
     const sidenotes = [
-        {id: 0, text: "This is something we're working on adjusting in future releases."}
+        {id: 0, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident hic repellat qui, quas delectus."}
     ]
 
     const snippets = [
         {id: 0, code: "Some code"}
     ]
+
+    const pagelinks = [
+        {id: 0, headerLink: "Header 1", url: "#header-1"},
+        {id: 1, subheaderLink: "Subheader 1", url: "#subheader-1"},
+        {id: 2, subheaderLink: "Subheader 2", url: "#subheader-2"},
+        {id: 3, subheaderLink: "Subheader 3", url: "#subheader-3"},
+        {id: 4, subheaderLink: "Subheader 4", url: "#subheader-4"}
+    ]
+
+    const pagebuttons = {
+        previousPage: "/",
+        nextPage: "/"
+    }
 
     return (
         <div className="page">
@@ -36,8 +49,8 @@ export default function Layout() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="card-container">
-                    {cards.map((element, id) => (
-                    <Card card={element} key={element.id}/>
+                    {cards.map((element) => (
+                        <Card card={element} key={element.id}/>
                     ))}
                 </div>
 
@@ -53,8 +66,8 @@ export default function Layout() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="snippet-container">
-                    {snippets.map((element, id) => (
-                    <Snippet snippet={element} key={id}/>
+                    {snippets.map((element) => (
+                        <Snippet snippet={element} key={element.id}/>
                     ))}
                 </div>
 
@@ -70,8 +83,8 @@ export default function Layout() {
                 beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
                 exercitationem iusto eaque sint magnam.</p>
                 <div className="sidenote-container">
-                    {sidenotes.map((element, id) => (
-                    <Sidenote sidenote={element} key={id}/>
+                    {sidenotes.map((element) => (
+                        <Sidenote sidenote={element} key={element.id}/>
                     ))}
                 </div>
 
@@ -83,10 +96,11 @@ export default function Layout() {
                 totam, sunt ipsum nesciunt modi inventore dignissimos quisquam ut laboriosam 
                 nam consectetur asperiores recusandae in obcaecati molestias sequi earum animi q
                 uod minus doloribus autem dolorum minima.</p>
-                <PageButtons/>
+                <PageButtons pageButtons={pagebuttons}/>
             </div>
             <div className="page-right">
-                <PageNav/>
+                {/* passes whole prop object to pageNav component, followed by pageNavLinks component */}
+                <PageNav pageLinks={pagelinks}/>
             </div>
         </div>
     )

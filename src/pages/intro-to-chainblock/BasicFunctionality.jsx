@@ -27,6 +27,11 @@ export default function BasicFunctionality() {
         {id: 4, subheaderLink: "Subheader 4", url: "#subheader-4"}
     ]
 
+    const pagebuttons = {
+        previousPage: "/why-choose-chainblock",
+        nextPage: "/getting-started"
+    }
+
     return (
         <div className="page">
             <div className="page-left">
@@ -90,7 +95,7 @@ export default function BasicFunctionality() {
                 totam, sunt ipsum nesciunt modi inventore dignissimos quisquam ut laboriosam 
                 nam consectetur asperiores recusandae in obcaecati molestias sequi earum animi q
                 uod minus doloribus autem dolorum minima.</p>
-                <PageButtons/>
+                <PageButtons pageButtons={pagebuttons}/>
             </div>
             <div className="page-right">
                 {/* passes whole prop object to pageNav component, followed by pageNavLinks component */}

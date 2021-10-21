@@ -2,8 +2,8 @@ import "../page.css";
 import Card from "../../components/card/Card";
 import Sidenote from "../../components/sidenote/Sidenote";
 import Snippet from "../../components/snippet/Snippet";
-import PageButtons from "../../components/pageButtons/PageButtons";
 import PageNav from "../../components/pageNav/PageNav";
+import {Link} from "react-router-dom";
 
 export default function SocialMedia() {
     const cards = [
@@ -90,7 +90,7 @@ export default function SocialMedia() {
                 totam, sunt ipsum nesciunt modi inventore dignissimos quisquam ut laboriosam 
                 nam consectetur asperiores recusandae in obcaecati molestias sequi earum animi q
                 uod minus doloribus autem dolorum minima.</p>
-                <PageButtons/>
+                <div className="previous-button"><Link to="/online-discussion-forums"><button>Back</button></Link></div>
             </div>
             <div className="page-right">
                 {/* passes whole prop object to pageNav component, followed by pageNavLinks component */}
