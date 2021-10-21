@@ -4,20 +4,21 @@
     color: var(--main-card);
     font-size: 16px;
     font-weight: 300;
+    transition: all 0.2s ease-in-out;
 }
 
 .pagenav span a {
     padding: 4px 66px;
     display: block;
-    color: var(--main-subheader);
+    color: var(--main-pagelinks);
     font-size: 16px;
     transition: all 0.2s ease-in-out;
 }
 
-.pagenav span:hover {
-    color: var(--main-header);
+.pagenav span a:hover {
+    color: var(--main-paragraph);
     cursor: pointer;
-    text-shadow: 0px 0px 1px #FFF;
+    text-shadow: 0px 0px 1.4px #FFF;
 }
 
 .pagenav i {

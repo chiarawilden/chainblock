@@ -26,7 +26,7 @@
 .page-right {
     flex: 1.25;
     height: 100%;
-    display: flex;
+    display: flex-start;
     align-items: flex-start;
     justify-content: center;
 }
