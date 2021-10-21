@@ -5,81 +5,32 @@ import Snippet from "../components/snippet/Snippet";
 import PageButtons from "../components/pageButtons/PageButtons";
 
 export default function Home() {
-    const cards = [
-        {id: 0, text: "Maybe consider architecting your code like this. Sometimes if you don't do it this way, things can go wrong."},  
-        {id: 1, text: "We just added this new feature to make your life easier! If you need more information, you can find it here."}
-    ]
-
     const sidenotes = [
-        {id: 0, text: "This is something we're working on adjusting in future releases."}
-    ]
-
-    const snippets = [
-        {id: 0, code: "Some code"}
+        {id: 0, text: "The words block and chain were used separately in Satoshi Nakamoto's original paper, but were eventually popularized as a single word, blockchain, by 2016."}
     ]
 
     return (
         <div className="page">
             <div className="page-left">
                 <h1>Welcome to ChainBlock</h1>
-                <h2>Subheader 1</h2>
-                <p>A blockchain is a growing list of records, called blocks, that are linked together using cryptography.
-                Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data (generally 
-                represented as a Merkle tree).</p>
+                <h2>Overview</h2>
+                <p>Cryptographer David Chaum first proposed a blockchain-like protocol in his 1982 dissertation 
+                "Computer Systems Established, Maintained, and Trusted by Mutually Suspicious Groups." Further 
+                work on a cryptographically secured chain of blocks was described in 1991 by Stuart Haber and W. 
+                Scott Stornetta. They wanted to implement a system wherein document timestamps could not 
+                be tampered with.</p>
                 
-                <p>The timestamp proves that the transaction data existed when the block was 
-                published in order to get into its hash. As blocks each contain information about the block previous to it, 
-                they form a chain, with each additional block reinforcing the ones before it. Therefore, blockchains are 
-                resistant to modification of their data because once recorded, the data in any given block cannot be altered 
-                retroactively without altering all subsequent blocks.</p>  
-                <div className="card-container">
-                    {cards.map((element, id) => (
-                    <Card card={element} key={id}/>
-                    ))}
-                </div>
-
-                <h2>Subheader 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
-                hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
-                cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
-                nostrum odit. Expedita voluptatum deserunt esse inventore? Iste incidunt alias 
-                totam, sunt ipsum nesciunt modi inventore dignissimos quisquam ut laboriosam 
-                nam consectetur asperiores recusandae in obcaecati molestias sequi earum animi q
-                uod minus doloribus autem dolorum minima. Delectus, iusto eius assumenda 
-                libero ducimus quasi minima eveniet. Minus reprehenderit qui veritatis velit 
-                beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
-                exercitationem iusto eaque sint magnam.</p>
-                <div className="snippet-container">
-                    {snippets.map((element, id) => (
-                    <Snippet snippet={element} key={id}/>
-                    ))}
-                </div>
-
-                <h2>Subheader 3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
-                hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
-                cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
-                nostrum odit. Expedita voluptatum deserunt esse inventore? Iste incidunt alias 
-                totam, sunt ipsum nesciunt modi inventore dignissimos quisquam ut laboriosam 
-                nam consectetur asperiores recusandae in obcaecati molestias sequi earum animi q
-                uod minus doloribus autem dolorum minima. Delectus, iusto eius assumenda 
-                libero ducimus quasi minima eveniet. Minus reprehenderit qui veritatis velit 
-                beatae est maxime maiores tempore, eaque eos. Fugiat, aut quidem ullam 
-                exercitationem iusto eaque sint magnam.</p>
+                <p>The first blockchain was conceptualized by a person (or group of people) known as Satoshi Nakamoto 
+                in 2008. Nakamoto improved the design in an important way using a Hashcash-like method to timestamp blocks 
+                without requiring them to be signed by a trusted party and introducing a difficulty parameter to stabilize 
+                rate with which blocks are added to the chain. The design was implemented the following year by Nakamoto 
+                as a core component of the cryptocurrency bitcoin, where it serves as the public ledger for all transactions 
+                on the network.</p>  
                 <div className="sidenote-container">
                     {sidenotes.map((element, id) => (
                     <Sidenote sidenote={element} key={id}/>
                     ))}
                 </div>
-
-                <h2>Subheader 4</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident 
-                hic repellat qui, quas delectus deserunt autem harum, aut eum eius maxime quaerat 
-                cum voluptatibus ipsum tempora perferendis possimus alias quod impedit rem maiores 
-                nostrum odit. Expedita voluptatum deserunt esse inventore? Iste incidunt alias 
-                totam, sunt ipsum nesciunt modi inventore dignissimos quisquam ut laboriosam 
-                nam consectetur asperiores recusandae in obcaecati molestias sequi earum animi q
-                uod minus doloribus autem dolorum minima.</p>
                 <PageButtons/>
             </div>
             <div className="page-right"></div>
