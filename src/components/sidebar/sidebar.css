@@ -13,7 +13,7 @@
     height: 0;
 }
 
-.sidebar span a {
+.sidebar a {
     color: var(--main-paragraph);
     text-decoration: none;
 }
