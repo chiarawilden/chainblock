@@ -29,7 +29,7 @@ import SocialMedia from "./pages/community/SocialMedia";
 
 function App() {
   return (
-    <Router basename="/index.html">
+    <Router>
 		<Switch>
 			<Route path="/" exact>
 				<Topbar/>
