@@ -2,10 +2,7 @@ import "./page.css";
 import {Link} from "react-router-dom";
 
 export default function Home() {
-    const sidenotes = [
-        {id: 0, text: "The words block and chain were used separately in Satoshi Nakamoto's original paper, but were eventually popularized as a single word, blockchain, by 2016."}
-    ]
-
+ 
     return (
         <div className="page">
             <div className="page-left">

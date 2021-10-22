@@ -15,10 +15,6 @@ export default function IntroToChainBlock() {
         {id: 0, text: "Blockchain is also being used in peer-to-peer energy trading."}
     ]
 
-    const snippets = [
-        {id: 0, code: "Some code"}
-    ]
-
     const pagelinks = [
         {id: 0, headerLink: "Intro to ChainBlock", url: "#intro-to-chainblock"},
         {id: 1, subheaderLink: "What is a blockchain?", url: "#what-is-a-blockchain"},
