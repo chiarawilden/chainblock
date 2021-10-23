@@ -81,7 +81,6 @@
     align-items: center;
     justify-content: flex-start;
     bottom: 0;
-    cursor: pointer;
 }
 
 .next-button {
@@ -93,7 +92,6 @@
     align-items: center;
     justify-content: flex-end;
     bottom: 0;
-    cursor: pointer;
 }
 
 .previous-button button, .next-button button {
@@ -102,6 +100,7 @@
     border-radius: 22px;
     border: 1px solid var(--main-accent);
     color: var(--main-accent);
+    cursor: pointer;
     font-size: 16px;
     font-weight: 600;
     transition: all 0.33s ease-in-out;
