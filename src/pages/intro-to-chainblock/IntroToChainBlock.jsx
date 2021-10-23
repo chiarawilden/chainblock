@@ -16,7 +16,7 @@ export default function IntroToChainBlock() {
     ]
 
     const pagelinks = [
-        {id: 0, headerLink: "Intro to ChainBlock", url: "#intro-to-chainblock"},
+        {id: 0, headerLink: "Intro to ChainBlock", url: "#start"},
         {id: 1, subheaderLink: "What is a blockchain?", url: "#what-is-a-blockchain"},
         {id: 2, subheaderLink: "Structure of Blockchains", url: "#structure-of-blockchains"},
         {id: 3, subheaderLink: "Use Cases", url: "#use-cases"},
@@ -31,7 +31,7 @@ export default function IntroToChainBlock() {
     return (
         <div className="page">
             <div className="page-left">
-                <h1 id="intro-to-chainblock">Intro to ChainBlock</h1>
+                <h1 id="start">Intro to ChainBlock</h1>
                 <h2 id="what-is-a-blockchain">What is a blockchain?</h2>
                 <p>A blockchain is a growing list of records, called blocks, that are linked together 
                 using cryptography. Each block contains a cryptographic hash of the previous block, 
