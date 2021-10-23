@@ -81,6 +81,7 @@
     align-items: center;
     justify-content: flex-start;
     bottom: 0;
+    cursor: pointer;
 }
 
 .next-button {
@@ -92,6 +93,7 @@
     align-items: center;
     justify-content: flex-end;
     bottom: 0;
+    cursor: pointer;
 }
 
 .previous-button button, .next-button button {
