@@ -48,7 +48,7 @@ I think this is why I've developed an affinity for Svelte. (I believe Shopify is
 
 I do see though how more granular architectures might benefit large teams working on projects with many, many features and stages of development, by preventing excess merge conflicts 🤝  
 
-*All that being said*, I ulimately decided to make components out of the areas which would seemingly most benefit from them, including the side bar and page links, card components, and main pages. Most content is placed directly in each page component.  
+*All that being said*, I ulimately decided to make components out of the areas which would seemingly benefit most from them, including the side bar and page links, card components, and main pages. Most content is placed directly in each page component.  
 
 I'm happy with this setup, though I wonder if it might be better to import data for the largest components from JSON files. The pages can get quite long, so perhaps that would be an improvement.  
 &nbsp;  
