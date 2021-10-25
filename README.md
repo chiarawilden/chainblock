@@ -45,6 +45,7 @@ I spent a lot of time thinking about which areas to modularize and why 💭 The 
 I personally prefer keeping more content within components, rather than creating structures of increasingly granular nested components. In the latter case, I find myself constantly worrying about imports/exports, changing file paths, and frantically clicking around in my text editor while React is yelling at me about a lowercase letter *somewhere* that should be uppercase 🤯 
 
 I think this is why I've developed an affinity for Svelte. (I believe Shopify is also starting to implement this sort of structure in Liquid). I really enjoy how Svelte allows you to easily implement HTML, CSS and JS all in one file 🙌🏽 You can create a similar effect in React using [styled components](https://npm.io/package/styled-components), but Svelte does it cleaner. It's also nice that this feature comes out of the box, with syntax highlighting included 👌🏽   
+
 I do see though how more granular architectures might benefit large teams working on projects with many, many features and stages of development, by preventing excess merge conflicts 🤝  
 
 *All that being said*, I ulimately decided to make components out of the areas which would seemingly benefit most from them, including the side bar and page links, card components, and main pages. Most content is placed directly in each page component.  
