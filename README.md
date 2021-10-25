@@ -6,7 +6,9 @@ What I didn't anticipate, was how difficult it would be to finally deploy the ap
 
 I'm fairly happy with how the UI turned out, though perhaps the card components could use some tweaking. I chose to use CSS variables for most colors, making it easy to implement different themes in the future 🎨  
 
-All dummy text contained within the first couple pages is taken from [this Wikipedia page on Blockchain technology](https://en.wikipedia.org/wiki/Blockchain). The remaining pages are filled with Lorem Ipsum (the sidebar links are dummy text as well). Here's the final result:  
+All dummy text contained within the first couple pages is taken from [this Wikipedia page on Blockchain technology](https://en.wikipedia.org/wiki/Blockchain). The remaining pages are filled with Lorem Ipsum (the sidebar links are all dummy text as well).  
+
+Here's the final result:  
 &nbsp;  
 
 ![ChainBlock Homepage](/readme/final-result.png)  
