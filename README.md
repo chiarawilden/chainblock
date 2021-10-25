@@ -1,5 +1,4 @@
 # ChainBlock Technical Documentation SPA ✍🏽
-&nbsp;  
 
 I created this SPA to practice working with React. As programmers, we spend so much time in documentation, quality of writing, ease-of-use, and aesthetic sensibility are all key to a pleasant experience 🌷 I thought it'd be a good exercise to architect my own docs app, using a modular approach, with these considerations in mind.
 
