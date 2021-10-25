@@ -76,3 +76,5 @@ The app is not yet responsive!
 
 ## Live Demo
 &nbsp;  
+
+You can [view a live demo of the app at this link](https://portfolio.chiarawilden.com/chainblock/#/)!
