@@ -1,6 +1,6 @@
 # ChainBlock Technical Documentation SPA ✍🏽
 
-I created this SPA to practice working with React. As programmers, we spend so much time in documentation, quality of writing, ease-of-use, and aesthetic sensibility are all key to a pleasant experience 🌷 I thought it'd be a good exercise to architect my own docs app, using a modular approach, with these considerations in mind.
+I created this SPA to practice working with React. As programmers, we spend so much time in documentation, quality of writing, ease-of-use, and aesthetic sensibility are all key to a pleasant experience. I thought it'd be a good exercise to architect my own docs app, using a modular approach, with these considerations in mind.
 
 What I didn't anticipate, was how difficult it would be to finally deploy the app after I finished 🤦🏽‍♀️ It took a solid 24 hours of painstaking searching and testing for me to solve a problem I was having with my Nginx server. (Definitely lost some hair from that..) Finally cracking the problem though, felt amazing 💪🏽😁 and I learned so much. 
 
@@ -40,11 +40,11 @@ The command to run this app after installing all packages, is  ```npm start```.
 ## Areas for Improvement
 
 ### Architecture
-I spent a lot of time thinking about which areas to modularize and why 💭 The more I program, the more I notice myself developing certain preferences, in terms of app structure and modularization.  
+I spent a lot of time thinking about which areas to modularize and why. The more I program, the more I notice myself developing certain preferences, in terms of app structure and modularization.  
 
 I personally prefer keeping more content within components, rather than creating structures of increasingly granular nested components. In the latter case, I find myself constantly worrying about imports/exports, changing file paths, and frantically clicking around in my text editor while React is yelling at me about a lowercase letter somewhere that should be uppercase 🤯 
 
-I think this is why I've developed an affinity for Svelte. (I believe Shopify is also starting to implement this sort of structure in Liquid). I really enjoy how Svelte allows you to easily implement HTML, CSS and JS all in one file 🙌🏽 You can create a similar effect in React using [styled components](https://npm.io/package/styled-components), but Svelte does it cleaner. It's also nice that this feature comes out of the box, with syntax highlighting included 👌🏽   
+I think this is why I've developed an affinity for Svelte. (I believe Shopify is also starting to implement this sort of structure in Liquid). I really enjoy how Svelte allows you to easily implement HTML, CSS and JS all in one file 🙌🏽 You can create a similar effect in React using [styled components](https://npm.io/package/styled-components), but Svelte does it cleaner. It's also nice that this feature comes out of the box, with syntax highlighting included. 
 
 I do see though how more granular architectures might benefit large teams working on projects with many, many features and stages of development, by preventing excess merge conflicts 🤝  
 
