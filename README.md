@@ -4,20 +4,20 @@ I created this SPA to practice working with React. As programmers, we spend so m
 
 What I didn't anticipate, was how difficult it would be to finally deploy the app after I finished 🤦🏽‍♀️ It took a solid 24 hours of painstaking searching and testing for me to solve a problem I was having with my Nginx server. (Definitely lost some hair from that..) Finally cracking the problem though, felt amazing 💪🏽😁 and I learned so much. 
 
-I'm fairly happy with how the UI turned out, though perhaps the card components could use some tweaking. I chose to use CSS variables for most colors, making it easy to implement different themes in the future 🎨  
+I'm fairly happy with how the UI turned out, though perhaps the card components could use some tweaking. I chose to use CSS variables for most colors, making it easy to implement different themes in the future.
 
 All dummy text contained within the first couple pages is taken from [this Wikipedia page on Blockchain technology](https://en.wikipedia.org/wiki/Blockchain). The remaining pages are filled with Lorem Ipsum (the sidebar links are all dummy text as well).  
 
 Here's the final result:  
 &nbsp;  
 
-![ChainBlock Homepage](/readme/final-result.png)  
+![ChainBlock Homepage](/readme/chainblock-01.png)  
 &nbsp;  
 
 **TLDR:**  
 
 
-## Goal 🏅
+## Goal
 
 Create a technical documentation SPA which uses React components to populate page and sidebar content.  
 &nbsp;  
@@ -37,7 +37,7 @@ The command to run this app after installing all packages, is  ```npm start```.
 &nbsp;  
 
 
-## Areas for Improvement
+## Room for Improvement
 
 ### Architecture
 I spent a lot of time thinking about which areas to modularize and why. The more I program, the more I notice myself developing certain preferences, in terms of app structure and modularization.  
@@ -75,4 +75,4 @@ The app is not yet responsive!
 
 
 ## Live Demo
-You can [view a live demo of the app at this link](https://portfolio.chiarawilden.com/chainblock/#/)!
+[View a live demo here](https://portfolio.chiarawilden.com/chainblock/).
