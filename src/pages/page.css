@@ -9,13 +9,14 @@
 }
 
 .page-left {
+    padding: 77px 44px 44px 44px;
     flex: 1.75;
     height: 100%;
-    padding: 44px;
     background-color: rgba(0, 0, 0, 0.3);
     overflow-y: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    border-top: 1px solid rgb(1, 63, 197);
 }
 
 .page-left::-webkit-scrollbar {
@@ -24,11 +25,13 @@
 }
 
 .page-right {
+    padding-top: 77px;
     flex: 1.25;
     height: 100%;
     display: flex-start;
     align-items: flex-start;
     justify-content: center;
+    border-top: 1px solid rgb(1, 63, 197);
 }
 
 .page-left h1 {

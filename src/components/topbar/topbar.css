@@ -1,12 +1,17 @@
 .topbar {
-      height: 77px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: var(--main-background);
-      border-bottom: 1px solid rgb(1, 63, 197);
-      color: #CCC;
+    position: fixed;
+    height: 77px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(var(--main-background), 0.1);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    box-shadow: 11px 11px 11px rgba(215, 224, 233, 0.04);
+    border-bottom: 1px solid rgb(1, 63, 197);
+    color: #CCC;
+    z-index: 1;
 }
 
 .info {
