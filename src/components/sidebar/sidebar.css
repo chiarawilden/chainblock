@@ -7,7 +7,7 @@
     overflow-y: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    border-top: 1px solid rgb(1, 63, 197);
+    border-top: 11px solid rgb(1, 63, 197);
 }
 
 .sidebar::-webkit-scrollbar {
