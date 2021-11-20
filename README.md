@@ -11,11 +11,7 @@ All dummy text contained within the first couple pages is taken from [this Wikip
 Here's the final result:  
 &nbsp;  
 
-![ChainBlock Homepage](/readme/chainblock-01.png)  
-&nbsp;  
-
-**TLDR:**  
-
+[![ChainBlock Homepage](/readme/chainblock-01.png)](https://portfolio.chiarawilden.com/chainblock)
 
 ## Goal
 
