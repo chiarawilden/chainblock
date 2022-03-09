@@ -23,8 +23,7 @@ export default function WhatIsChainBlock() {
         {id: 0, headerLink: "What is ChainBlock?", url: "#header-1"},
         {id: 1, subheaderLink: "Subheader 1", url: "#subheader-1"},
         {id: 2, subheaderLink: "Subheader 2", url: "#subheader-2"},
-        {id: 3, subheaderLink: "Subheader 3", url: "#subheader-3"},
-        {id: 4, subheaderLink: "Subheader 4", url: "#subheader-4"}
+        {id: 3, subheaderLink: "Subheader 3", url: "#subheader-3"}
     ]
 
     const pagebuttons = {

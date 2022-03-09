@@ -99,7 +99,6 @@ export default function Layout() {
                 <PageButtons pageButtons={pagebuttons}/>
             </div>
             <div className="page-right">
-                {/* passes whole prop object to pageNav component, followed by pageNavLinks component */}
                 <PageNav pageLinks={pagelinks}/>
             </div>
         </div>
