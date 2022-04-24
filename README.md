@@ -61,4 +61,4 @@ I created a ```Snippets.jsx``` component for code blocks, which must still be pr
 The app is not yet responsive.
 
 ## Live Demo
-[View a live demo here](https://portfolio.chiarawilden.com/chainblock/).
+[View a live demo here](https://dev.chiarawilden.com/chainblock/).
